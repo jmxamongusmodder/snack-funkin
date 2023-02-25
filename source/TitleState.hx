@@ -93,7 +93,7 @@ class TitleState extends MusicBeatState
 		Paths.pushGlobalMods();
 		#end
 		// Just to load a mod on start up if ya got one. For mods that change the menu music and bg
-		WeekData.loadTheFirstEnabledMod();
+		//WeekData.loadTheFirstEnabledMod();
 
 		//trace(path, FileSystem.exists(path));
 
@@ -627,21 +627,11 @@ class TitleState extends MusicBeatState
 					//FlxG.sound.music.stop();
 					FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
 					FlxG.sound.music.fadeIn(4, 0, 0.7);
-				case 2:
-					#if PSYCH_WATERMARKS
-					createCoolText(['Psych Engine by'], 15);
-					#else
-					createCoolText(['ninjamuffin99', 'phantomArcade', 'kawaisprite', 'evilsk8er']);
-					#end
+				case 3:
+					createCoolText(['glm', 'coltinthefurry', 'goldegame']);
 				// credTextShit.visible = true;
 				case 4:
-					#if PSYCH_WATERMARKS
-					addMoreText('Shadow Mario', 15);
-					addMoreText('RiverOaken', 15);
-					addMoreText('shubs', 15);
-					#else
 					addMoreText('present');
-					#end
 				// credTextShit.text += '\npresent...';
 				// credTextShit.addText();
 				case 5:
@@ -650,18 +640,14 @@ class TitleState extends MusicBeatState
 				// credTextShit.text = 'In association \nwith';
 				// credTextShit.screenCenter();
 				case 6:
-					#if PSYCH_WATERMARKS
-					createCoolText(['Not associated', 'with'], -40);
-					#else
-					createCoolText(['In association', 'with'], -40);
-					#end
+					createCoolText(['A mod based around', 'GASA4'], -40);
 				case 8:
-					addMoreText('newgrounds', -40);
-					ngSpr.visible = true;
+					addMoreText('Snackcore', -40);
+					//ngSpr.visible = true;
 				// credTextShit.text += '\nNewgrounds';
 				case 9:
 					deleteCoolText();
-					ngSpr.visible = false;
+					//ngSpr.visible = false;
 				// credTextShit.visible = false;
 
 				// credTextShit.text = 'Shoutouts Tom Fulp';
@@ -678,15 +664,19 @@ class TitleState extends MusicBeatState
 				// credTextShit.text = "Friday";
 				// credTextShit.screenCenter();
 				case 14:
-					addMoreText('Friday');
+					addMoreText('Get');
 				// credTextShit.visible = true;
 				case 15:
-					addMoreText('Night');
+					addMoreText('A');
 				// credTextShit.text += '\nNight';
 				case 16:
-					addMoreText('Funkin'); // credTextShit.text += '\nFunkin';
-
+					addMoreText('Snack'); // credTextShit.text += '\nFunkin';
 				case 17:
+					addMoreText('At'); // credTextShit.text += '\nFunkin';
+				case 18:
+					addMoreText('4AM'); // credTextShit.text += '\nFunkin';
+
+				case 20:
 					skipIntro();
 			}
 		}

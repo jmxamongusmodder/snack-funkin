@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Player.png">
+<SubTexture name="Player idle0000" x="0" y="0" width="683" height="833" frameX="0" frameY="0" frameWidth="683" frameHeight="833" />
+<SubTexture name="Player idle0001" x="683" y="0" width="683" height="833" frameX="0" frameY="0" frameWidth="683" frameHeight="833" />
+<SubTexture name="Player idle0002" x="1366" y="0" width="683" height="833" frameX="0" frameY="0" frameWidth="683" frameHeight="833" />
+<SubTexture name="Player idle0003" x="0" y="833" width="683" height="833" frameX="0" frameY="0" frameWidth="683" frameHeight="833" />
+<SubTexture name="Player idle0004" x="683" y="833" width="683" height="833" frameX="0" frameY="0" frameWidth="683" frameHeight="833" />
+<SubTexture name="Player idle0005" x="683" y="833" width="683" height="833" frameX="0" frameY="0" frameWidth="683" frameHeight="833" />
+<SubTexture name="Player down0000" x="1366" y="833" width="683" height="833" frameX="0" frameY="0" frameWidth="683" frameHeight="833" />
+<SubTexture name="Player down0001" x="2049" y="0" width="683" height="833" frameX="0" frameY="0" frameWidth="683" frameHeight="833" />
+<SubTexture name="Player down0002" x="2049" y="833" width="683" height="833" frameX="0" frameY="0" frameWidth="683" frameHeight="833" />
+<SubTexture name="Player down0003" x="0" y="1666" width="683" height="833" frameX="0" frameY="0" frameWidth="683" frameHeight="833" />
+<SubTexture name="Player down0004" x="683" y="1666" width="683" height="833" frameX="0" frameY="0" frameWidth="683" frameHeight="833" />
+<SubTexture name="Player left0000" x="1366" y="1666" width="683" height="833" frameX="0" frameY="0" frameWidth="683" frameHeight="833" />
+<SubTexture name="Player left0001" x="2049" y="1666" width="683" height="833" frameX="0" frameY="0" frameWidth="683" frameHeight="833" />
+<SubTexture name="Player left0002" x="2732" y="0" width="683" height="833" frameX="0" frameY="0" frameWidth="683" frameHeight="833" />
+<SubTexture name="Player left0003" x="2732" y="833" width="683" height="833" frameX="0" frameY="0" frameWidth="683" frameHeight="833" />
+<SubTexture name="Player left0004" x="2732" y="1666" width="683" height="833" frameX="0" frameY="0" frameWidth="683" frameHeight="833" />
+<SubTexture name="Player right0000" x="0" y="2499" width="683" height="833" frameX="0" frameY="0" frameWidth="683" frameHeight="833" />
+<SubTexture name="Player right0001" x="683" y="2499" width="683" height="833" frameX="0" frameY="0" frameWidth="683" frameHeight="833" />
+<SubTexture name="Player right0002" x="1366" y="2499" width="683" height="833" frameX="0" frameY="0" frameWidth="683" frameHeight="833" />
+<SubTexture name="Player right0003" x="2049" y="2499" width="683" height="833" frameX="0" frameY="0" frameWidth="683" frameHeight="833" />
+<SubTexture name="Player right0004" x="2732" y="2499" width="683" height="833" frameX="0" frameY="0" frameWidth="683" frameHeight="833" />
+<SubTexture name="Player up0000" x="3415" y="0" width="683" height="833" frameX="0" frameY="0" frameWidth="683" frameHeight="833" />
+<SubTexture name="Player up0001" x="3415" y="833" width="683" height="833" frameX="0" frameY="0" frameWidth="683" frameHeight="833" />
+<SubTexture name="Player up0002" x="3415" y="1666" width="683" height="833" frameX="0" frameY="0" frameWidth="683" frameHeight="833" />
+<SubTexture name="Player up0003" x="3415" y="2499" width="683" height="833" frameX="0" frameY="0" frameWidth="683" frameHeight="833" />
+<SubTexture name="Player up0004" x="4098" y="0" width="683" height="833" frameX="0" frameY="0" frameWidth="683" frameHeight="833" />
+</TextureAtlas>

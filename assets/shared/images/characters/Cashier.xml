@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Cashier.png">
+<SubTexture name="Cashier down0000" x="0" y="0" width="714" height="833" frameX="0" frameY="0" frameWidth="714" frameHeight="833" />
+<SubTexture name="Cashier down0001" x="714" y="0" width="714" height="833" frameX="0" frameY="0" frameWidth="714" frameHeight="833" />
+<SubTexture name="Cashier down0002" x="1428" y="0" width="714" height="833" frameX="0" frameY="0" frameWidth="714" frameHeight="833" />
+<SubTexture name="Cashier down0003" x="0" y="833" width="714" height="833" frameX="0" frameY="0" frameWidth="714" frameHeight="833" />
+<SubTexture name="Cashier down0004" x="714" y="833" width="714" height="833" frameX="0" frameY="0" frameWidth="714" frameHeight="833" />
+<SubTexture name="Cashier idle0000" x="1428" y="833" width="714" height="833" frameX="0" frameY="0" frameWidth="714" frameHeight="833" />
+<SubTexture name="Cashier idle0001" x="2142" y="0" width="714" height="833" frameX="0" frameY="0" frameWidth="714" frameHeight="833" />
+<SubTexture name="Cashier idle0002" x="2142" y="833" width="714" height="833" frameX="0" frameY="0" frameWidth="714" frameHeight="833" />
+<SubTexture name="Cashier idle0003" x="0" y="1666" width="714" height="833" frameX="0" frameY="0" frameWidth="714" frameHeight="833" />
+<SubTexture name="Cashier idle0004" x="714" y="1666" width="714" height="833" frameX="0" frameY="0" frameWidth="714" frameHeight="833" />
+<SubTexture name="Cashier left0000" x="1428" y="1666" width="714" height="833" frameX="0" frameY="0" frameWidth="714" frameHeight="833" />
+<SubTexture name="Cashier left0001" x="2142" y="1666" width="714" height="833" frameX="0" frameY="0" frameWidth="714" frameHeight="833" />
+<SubTexture name="Cashier left0002" x="2856" y="0" width="714" height="833" frameX="0" frameY="0" frameWidth="714" frameHeight="833" />
+<SubTexture name="Cashier left0003" x="2856" y="833" width="714" height="833" frameX="0" frameY="0" frameWidth="714" frameHeight="833" />
+<SubTexture name="Cashier left0004" x="2856" y="1666" width="714" height="833" frameX="0" frameY="0" frameWidth="714" frameHeight="833" />
+<SubTexture name="Cashier right0000" x="0" y="2499" width="714" height="833" frameX="0" frameY="0" frameWidth="714" frameHeight="833" />
+<SubTexture name="Cashier right0001" x="714" y="2499" width="714" height="833" frameX="0" frameY="0" frameWidth="714" frameHeight="833" />
+<SubTexture name="Cashier right0002" x="1428" y="2499" width="714" height="833" frameX="0" frameY="0" frameWidth="714" frameHeight="833" />
+<SubTexture name="Cashier right0003" x="2142" y="2499" width="714" height="833" frameX="0" frameY="0" frameWidth="714" frameHeight="833" />
+<SubTexture name="Cashier right0004" x="2856" y="2499" width="714" height="833" frameX="0" frameY="0" frameWidth="714" frameHeight="833" />
+<SubTexture name="Cashier up0000" x="3570" y="0" width="714" height="833" frameX="0" frameY="0" frameWidth="714" frameHeight="833" />
+<SubTexture name="Cashier up0001" x="3570" y="833" width="714" height="833" frameX="0" frameY="0" frameWidth="714" frameHeight="833" />
+<SubTexture name="Cashier up0002" x="3570" y="1666" width="714" height="833" frameX="0" frameY="0" frameWidth="714" frameHeight="833" />
+<SubTexture name="Cashier up0003" x="3570" y="2499" width="714" height="833" frameX="0" frameY="0" frameWidth="714" frameHeight="833" />
+<SubTexture name="Cashier up0004" x="0" y="3332" width="714" height="833" frameX="0" frameY="0" frameWidth="714" frameHeight="833" />
+</TextureAtlas>

@@ -1,0 +1,20 @@
+{
+	"songs": [
+		["Test", "cashier", [165, 0, 77]]
+	],
+
+	"weekCharacters": [
+		"",
+		"bf",
+		"gf"
+	],
+	"weekBackground": "stage",
+
+	"storyName": "Rap battle cashier at 4am",
+	"weekBefore": "weekcashier",
+	"weekName": "Cashcashier",
+	"startUnlocked": true,
+
+	"hideStoryMode": false,
+	"hideFreeplay": false
+}
