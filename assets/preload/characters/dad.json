@@ -1,66 +1,66 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
-				-1,
-				2
+				0,
+				1
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singLEFT",
-			"loop": false,
-			"name": "Cashier left"
+			"fps": 24,
+			"name": "Cashier left",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singDOWN",
-			"loop": false,
-			"name": "Cashier down"
+			"fps": 24,
+			"name": "Cashier down",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
-				4,
-				0
+				1,
+				-1
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singUP",
-			"loop": false,
-			"name": "Cashier up"
+			"fps": 24,
+			"name": "Cashier up",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
-				-6
+				-1
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singRIGHT",
-			"loop": false,
-			"name": "Cashier right"
+			"fps": 24,
+			"name": "Cashier right",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "idle",
-			"loop": false,
-			"name": "Cashier idle"
+			"fps": 24,
+			"name": "Cashier idle",
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/Cashier",
 	"position": [
 		-90,
-		200
+		120
 	],
 	"healthicon": "cashier",
 	"flip_x": false,
@@ -70,8 +70,8 @@
 		30
 	],
 	"camera_position": [
-		30,
-		-10
+		50,
+		-30
 	],
 	"sing_duration": 6.1,
 	"scale": 1
