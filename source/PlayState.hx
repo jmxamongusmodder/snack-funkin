@@ -92,7 +92,7 @@ class PlayState extends MusicBeatState
 		['Amazing.', 0.8], //From 70% to 79%
 		['OMG', 0.9], //From 80% to 89%
 		['OMFG', 1], //From 90% to 99%
-		['AAAAAA', 1] //The value on this one isn't used actually, since Perfect is always "1"
+		['AAAAA', 1] //The value on this one isn't used actually, since Perfect is always "1"
 	];
 
 	//event variables
@@ -325,6 +325,17 @@ class PlayState extends MusicBeatState
 	// stores the last combo score objects in an array
 	public static var lastScore:Array<FlxSprite> = [];
 
+        // Store inside
+	var storeBG:BGSprite;
+	//var boppinplayer:BGSprite;
+        // Store outside
+	var outsideBG:BGSprite;
+	var redBG:BGSprite;
+        // Casho Land
+	var cashoBG:BGSprite;
+        // Freezer (unused)
+	var freezerBG:BGSprite;
+
 	override public function create()
 	{
 		//trace('Playback Rate: ' + playbackRate);
@@ -551,6 +562,10 @@ class PlayState extends MusicBeatState
 				//PRECACHE SOUNDS
 				precacheList.set('thunder_1', 'sound');
 				precacheList.set('thunder_2', 'sound');
+
+			case 'store': //Week Cashier
+				storeBG = new BGSprite('store', -200, -100);
+				add(storeBG);
 
 			case 'philly': //Week 3
 				if(!ClientPrefs.lowQuality) {
@@ -2459,7 +2474,12 @@ class PlayState extends MusicBeatState
 				else
 					oldNote = null;
 
-				var swagNote:Note = new Note(daStrumTime, daNoteData, oldNote);
+				var player:Character = dad;
+
+				if (gottaHitNote)
+					player = boyfriend;
+
+				var swagNote:Note = new Note(daStrumTime, daNoteData, oldNote, false, player.noteSkin);
 				swagNote.mustPress = gottaHitNote;
 				swagNote.sustainLength = songNotes[2];
 				swagNote.gfNote = (section.gfSection && (songNotes[1]<4));
@@ -2479,7 +2499,7 @@ class PlayState extends MusicBeatState
 					{
 						oldNote = unspawnNotes[Std.int(unspawnNotes.length - 1)];
 
-						var sustainNote:Note = new Note(daStrumTime + (Conductor.stepCrochet * susNote) + (Conductor.stepCrochet / FlxMath.roundDecimal(songSpeed, 2)), daNoteData, oldNote, true);
+						var sustainNote:Note = new Note(daStrumTime + (Conductor.stepCrochet * susNote) + (Conductor.stepCrochet / FlxMath.roundDecimal(songSpeed, 2)), daNoteData, oldNote, true, player.noteSkin);
 						sustainNote.mustPress = gottaHitNote;
 						sustainNote.gfNote = (section.gfSection && (songNotes[1]<4));
 						sustainNote.noteType = swagNote.noteType;

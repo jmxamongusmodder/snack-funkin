@@ -98,7 +98,6 @@ class Note extends FlxSprite
 	private function set_multSpeed(value:Float):Float {
 		resizeByRatio(value / multSpeed);
 		multSpeed = value;
-		//trace('fuck cock');
 		return value;
 	}
 
@@ -112,9 +111,10 @@ class Note extends FlxSprite
 	}
 
 	private function set_texture(value:String):String {
-		if(texture != value) {
-			reloadNote('', value);
-		}
+		if (texture != value)
+		{
+			reloadNote('', '', value);
+                }
 		texture = value;
 		return value;
 	}
@@ -161,7 +161,7 @@ class Note extends FlxSprite
 		return value;
 	}
 
-	public function new(strumTime:Float, noteData:Int, ?prevNote:Note, ?sustainNote:Bool = false, ?inEditor:Bool = false)
+	public function new(strumTime:Float, noteData:Int, ?prevNote:Note, ?sustainNote:Bool = false, ?playerNoteSkin:String = 'NOTE_assets', ?inEditor:Bool = false)
 	{
 		super();
 
@@ -180,8 +180,9 @@ class Note extends FlxSprite
 
 		this.noteData = noteData;
 
-		if(noteData > -1) {
-			texture = '';
+		if (noteData > -1)
+		{
+			texture = playerNoteSkin;
 			colorSwap = new ColorSwap();
 			shader = colorSwap.shader;
 
@@ -248,16 +249,25 @@ class Note extends FlxSprite
 	var lastNoteOffsetXForPixelAutoAdjusting:Float = 0;
 	var lastNoteScaleToo:Float = 1;
 	public var originalHeightForCalcs:Float = 6;
-	function reloadNote(?prefix:String = '', ?texture:String = '', ?suffix:String = '') {
+	function reloadNote(playerNoteSkin:String = '', ?prefix:String = '', ?texture:String = '', ?suffix:String = '') {
 		if(prefix == null) prefix = '';
 		if(texture == null) texture = '';
 		if(suffix == null) suffix = '';
 
 		var skin:String = texture;
-		if(texture.length < 1) {
-			skin = PlayState.SONG.arrowSkin;
-			if(skin == null || skin.length < 1) {
-				skin = 'NOTE_assets';
+		if (texture.length < 1)
+		{
+			if (playerNoteSkin == '')
+			{
+				skin = PlayState.SONG.arrowSkin;
+				if (skin == null || skin.length < 1)
+				{
+					skin = 'NOTE_assets';
+				}
+			}
+			else
+			{
+				skin = playerNoteSkin;
 			}
 		}
 
