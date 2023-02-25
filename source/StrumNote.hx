@@ -23,12 +23,14 @@ class StrumNote extends FlxSprite
 	private var player:Int = 0;
 	
 	public var texture(default, set):String = null;
-	private function set_texture(value:String):String {
+
+	private function set_texture(value:String):String
+        {
 		if (texture != value)
 		{
-			reloadNote('', value);
+		        texture = value;
+			reloadNote();
 		}
-		texture = value;
 		return value;
 	}
 
@@ -44,8 +46,6 @@ class StrumNote extends FlxSprite
 		super(x, y);
 
 		var skin:String = player.noteSkin;
-		// if (PlayState.SONG.arrowSkin != null && PlayState.SONG.arrowSkin.length > 1)
-		//	skin = PlayState.SONG.arrowSkin;
 		texture = skin; // Load texture and anims
 
 		scrollFactor.set();
