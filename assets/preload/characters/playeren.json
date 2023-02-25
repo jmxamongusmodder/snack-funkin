@@ -62,7 +62,7 @@
 		-90,
 		180
 	],
-	"healthicon": "bf",
+	"healthicon": "player",
 	"flip_x": true,
 	"healthbar_colors": [
 		49,

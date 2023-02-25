@@ -563,9 +563,13 @@ class PlayState extends MusicBeatState
 				precacheList.set('thunder_1', 'sound');
 				precacheList.set('thunder_2', 'sound');
 
-			case 'store': //Week Cashier
-				storeBG = new BGSprite('store', -200, -100);
+			case 'store': // Week Cashier
+				storeBG = new BGSprite('store', 0, 0);
 				add(storeBG);
+
+			case 'outside': // Week Cashier
+				outsideBG = new BGSprite('parkinglot', 0, 0);
+				add(outsideBG);
 
 			case 'philly': //Week 3
 				if(!ClientPrefs.lowQuality) {
