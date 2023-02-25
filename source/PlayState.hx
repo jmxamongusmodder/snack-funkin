@@ -83,7 +83,7 @@ class PlayState extends MusicBeatState
 	public static var STRUM_X_MIDDLESCROLL = -278;
 
 	public static var ratingStuff:Array<Dynamic> = [
-		['Your bad.', 0.2], //From 0% to 19%
+		['####', 0.2], //From 0% to 19%
 		['Wow.', 0.4], //From 20% to 39%
 		['Gettin better.', 0.5], //From 40% to 49%
 		['Hmmm', 0.6], //From 50% to 59%
@@ -961,10 +961,26 @@ class PlayState extends MusicBeatState
 		dadGroup.add(dad);
 		startCharacterLua(dad.curCharacter);
 
+		switch (dad.healthIcon) // to add more characters add there not skin in notes/ and then add the case and stuff.
+		{
+			case 'cashier':
+				dad.noteSkin = 'notes/roux';
+			case 'casho':
+				dad.noteSkin = 'notes/casho';
+			default:
+				dad.noteSkin = 'notes/roux';
+		}
+
 		boyfriend = new Boyfriend(0, 0, SONG.player1);
 		startCharacterPos(boyfriend);
 		boyfriendGroup.add(boyfriend);
 		startCharacterLua(boyfriend.curCharacter);
+
+		switch (boyfriend.healthIcon)
+		{
+			default:
+				boyfriend.noteSkin = 'notes/bf';
+		}
 
 		var camPos:FlxPoint = new FlxPoint(girlfriendCameraOffset[0], girlfriendCameraOffset[1]);
 		if(gf != null)
@@ -2639,7 +2655,7 @@ class PlayState extends MusicBeatState
 				else if(ClientPrefs.middleScroll) targetAlpha = 0.35;
 			}
 
-			var babyArrow:StrumNote = new StrumNote(ClientPrefs.middleScroll ? STRUM_X_MIDDLESCROLL : STRUM_X, strumLine.y, i, player);
+			var babyArrow:StrumNote = new StrumNote(ClientPrefs.middleScroll ? STRUM_X_MIDDLESCROLL : STRUM_X, strumLine.y, i, [dad, boyfriend][player]); // Fix ?
 			babyArrow.downScroll = ClientPrefs.downScroll;
 			if (!isStoryMode && !skipArrowStartTween)
 			{
@@ -4324,11 +4340,15 @@ class PlayState extends MusicBeatState
 			}
 
 			var spr:StrumNote = playerStrums.members[key];
-			if(strumsBlocked[key] != true && spr != null && spr.animation.curAnim.name != 'confirm')
+			if (spr.animation.curAnim != null)
 			{
-				spr.playAnim('pressed');
-				spr.resetAnim = 0;
+				if (strumsBlocked[key] != true && spr != null && spr.animation.curAnim.name != 'confirm')
+				{
+					spr.playAnim('pressed');
+					spr.resetAnim = 0;
+				}
 			}
+
 			callOnLuas('onKeyPress', [key]);
 		}
 		//trace('pressed: ' + controlArray);

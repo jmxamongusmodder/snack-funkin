@@ -2,77 +2,77 @@
 	"animations": [
 		{
 			"offsets": [
-				-1,
-				2
-			],
-			"indices": [],
-			"fps": 24,
-			"anim": "singLEFT",
-			"loop": false,
-			"name": "Cashier left"
-		},
-		{
-			"offsets": [
-				0,
-				0
-			],
-			"indices": [],
-			"fps": 24,
-			"anim": "singDOWN",
-			"loop": false,
-			"name": "Cashier down"
-		},
-		{
-			"offsets": [
-				4,
-				0
-			],
-			"indices": [],
-			"fps": 24,
-			"anim": "singUP",
-			"loop": false,
-			"name": "Cashier up"
-		},
-		{
-			"offsets": [
-				0,
-				-6
-			],
-			"indices": [],
-			"fps": 24,
-			"anim": "singRIGHT",
-			"loop": false,
-			"name": "Cashier right"
-		},
-		{
-			"offsets": [
-				0,
+				-5,
 				0
 			],
 			"indices": [],
 			"fps": 24,
 			"anim": "idle",
 			"loop": false,
-			"name": "Cashier idle"
+			"name": "Player idle"
+		},
+		{
+			"offsets": [
+				-6,
+				-3
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "Player left"
+		},
+		{
+			"offsets": [
+				-5,
+				-2
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "Player down"
+		},
+		{
+			"offsets": [
+				-4,
+				1
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "Player right"
+		},
+		{
+			"offsets": [
+				-6,
+				-3
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": false,
+			"name": "Player up"
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/Cashier",
+	"image": "characters/Player",
 	"position": [
 		-90,
-		200
+		180
 	],
-	"healthicon": "cashier",
-	"flip_x": false,
+	"healthicon": "bf",
+	"flip_x": true,
 	"healthbar_colors": [
-		0,
-		155,
-		30
+		49,
+		176,
+		209
 	],
 	"camera_position": [
-		30,
-		-10
+		70,
+		0
 	],
-	"sing_duration": 6.1,
+	"sing_duration": 4.3,
 	"scale": 1
 }

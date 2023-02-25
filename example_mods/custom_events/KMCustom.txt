@@ -1,0 +1,2 @@
+This script kills the player after a certain amount of misses
+Value 1: The number of allowed misses before they die.
