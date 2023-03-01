@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="player.png">
+<SubTexture name="player idle0000" x="826" y="0" width="401" height="499" frameX="-7" frameY="-14" frameWidth="429" frameHeight="528" />
+<SubTexture name="player idle0001" x="826" y="0" width="401" height="499" frameX="-7" frameY="-14" frameWidth="429" frameHeight="528" />
+<SubTexture name="player down0000" x="0" y="915" width="419" height="156" frameX="-2" frameY="-372" frameWidth="429" frameHeight="528" />
+<SubTexture name="player down0001" x="0" y="915" width="419" height="156" frameX="-2" frameY="-372" frameWidth="429" frameHeight="528" />
+<SubTexture name="player left0000" x="0" y="519" width="399" height="396" frameX="-16" frameY="-125" frameWidth="429" frameHeight="528" />
+<SubTexture name="player left0001" x="0" y="519" width="399" height="396" frameX="-16" frameY="-125" frameWidth="429" frameHeight="528" />
+<SubTexture name="player right0000" x="399" y="519" width="392" height="396" frameX="-14" frameY="-125" frameWidth="429" frameHeight="528" />
+<SubTexture name="player right0001" x="399" y="519" width="392" height="396" frameX="-14" frameY="-125" frameWidth="429" frameHeight="528" />
+<SubTexture name="player up0000" x="0" y="0" width="413" height="519" frameX="-8" frameY="-2" frameWidth="429" frameHeight="528" />
+<SubTexture name="player up0001" x="0" y="0" width="413" height="519" frameX="-8" frameY="-2" frameWidth="429" frameHeight="528" />
+<SubTexture name="player missdown0000" x="419" y="915" width="419" height="156" frameX="-2" frameY="-372" frameWidth="429" frameHeight="528" />
+<SubTexture name="player missdown0001" x="419" y="915" width="419" height="156" frameX="-2" frameY="-372" frameWidth="429" frameHeight="528" />
+<SubTexture name="player missleft0000" x="791" y="519" width="399" height="396" frameX="-16" frameY="-125" frameWidth="429" frameHeight="528" />
+<SubTexture name="player missright0000" x="1227" y="0" width="392" height="396" frameX="-14" frameY="-125" frameWidth="429" frameHeight="528" />
+<SubTexture name="player missup0000" x="413" y="0" width="413" height="519" frameX="-8" frameY="-2" frameWidth="429" frameHeight="528" />
+</TextureAtlas>

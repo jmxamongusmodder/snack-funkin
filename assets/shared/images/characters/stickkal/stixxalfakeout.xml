@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="stixxalfakeout.png">
+<SubTexture name="stixxalfakeout idle0000" x="0" y="572" width="290" height="271" frameX="-31" frameY="-78" frameWidth="352" frameHeight="352" />
+<SubTexture name="stixxalfakeout idle0001" x="0" y="572" width="290" height="271" frameX="-31" frameY="-78" frameWidth="352" frameHeight="352" />
+<SubTexture name="stixxalfakeout left0000" x="871" y="0" width="429" height="387" frameX="-15" frameY="-16" frameWidth="463" frameHeight="414" />
+<SubTexture name="stixxalfakeout left0001" x="871" y="0" width="429" height="387" frameX="-15" frameY="-16" frameWidth="463" frameHeight="414" />
+<SubTexture name="stixxalfakeout right0000" x="427" y="0" width="444" height="451" frameX="0" frameY="0" frameWidth="444" frameHeight="451" />
+<SubTexture name="stixxalfakeout right0001" x="427" y="0" width="444" height="451" frameX="0" frameY="0" frameWidth="444" frameHeight="451" />
+<SubTexture name="stixxalfakeout up0000" x="290" y="572" width="247" height="254" frameX="-23" frameY="-22" frameWidth="288" frameHeight="291" />
+<SubTexture name="stixxalfakeout up0001" x="290" y="572" width="247" height="254" frameX="-23" frameY="-22" frameWidth="288" frameHeight="291" />
+<SubTexture name="stixxalfakeout down0000" x="0" y="0" width="427" height="572" frameX="-15" frameY="-16" frameWidth="457" frameHeight="602" />
+<SubTexture name="stixxalfakeout down0001" x="0" y="0" width="427" height="572" frameX="-15" frameY="-16" frameWidth="457" frameHeight="602" />
+</TextureAtlas>

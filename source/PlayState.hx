@@ -986,6 +986,8 @@ class PlayState extends MusicBeatState
 				dad.noteSkin = 'notes/roux';
 			case 'casho':
 				dad.noteSkin = 'notes/casho';
+			case 'stick':
+				dad.noteSkin = 'notes/sti';
 			default:
 				dad.noteSkin = 'notes/roux';
 		}
@@ -997,6 +999,8 @@ class PlayState extends MusicBeatState
 
 		switch (boyfriend.healthIcon)
 		{
+			case 'poop':
+				boyfriend.noteSkin = 'notes/poop';
 			default:
 				boyfriend.noteSkin = 'notes/bf';
 		}
